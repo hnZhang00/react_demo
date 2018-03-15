@@ -17,6 +17,7 @@ module.exports = merge(baseWebpackConfig, {
 		}),
 		new webpack.optimize.OccurrenceOrderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
+		// webpack4移除了NoErrorsPlugin
 		// new webpack.NoErrorsPlugin(),
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
